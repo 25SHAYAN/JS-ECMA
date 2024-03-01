@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+</head>
+<body>
+    <center>
+        <h1>Default parameters in function (to avoid NaN (NOT A NON))</h1>
+    </center>
+<hr>
+    <script>
+        function sum(a,b=20){
+            document.write(`<h3>sum of a and b = ${a+b}</h3>`);
+        }
+        sum(10,20);//30
+        sum(5);//NaN//25
+
+        function mul(a,b=2,c=2){
+            document.write(`<h1>product  = ${a*b*c}</h1>`);
+        }
+       mul(10,4,5);//do same
+        mul(10,4);
+        mul(10);
+    </script>
+</body>
+</html>
